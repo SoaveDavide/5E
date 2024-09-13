@@ -17,8 +17,8 @@ h1 {
   text-align: center;
 }
 .navbar {
-  overflow: hidden;
-  background-color: #333;
+  overflow: hidden;/*nasconde qualsiasi contenuto al di fuori della barra di navigazione*/
+  background-color: #333;/*mette lo sfondo sulla barra di navigazione*/
 }
 
 .navbar a {
@@ -26,11 +26,11 @@ h1 {
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 14px 16px;/*padding interno ai liml*/
+  text-decoration: none;/*rimuove la sottolieatura ai link*/
 }
 
-.dropdown {
+.dropdown { /*sarebbero i selettori applicati al menù a tendina*/
   float: left;
   overflow: hidden;
 }
@@ -38,18 +38,18 @@ h1 {
 .dropdown .dropbtn {
   font-size: 16px;  
   border: none;
-  outline: none;
+  outline: none; /*rimuove il contorno del pulsante*/
   color: white;
   padding: 14px 16px;
-  background-color: inherit;
+  background-color: inherit;/*eredita lo stile del pulsante del dropdown*/
   font-family: inherit;
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn { /*Cambia il colore di sfondo a rosso quando si passa il mouse sopra un link della navbar o il pulsante del dropdown.*/
   background-color: red;
 }
-
+/*riguarda il menu del dropdown*/
 .dropdown-content {
   display: none;
   position: absolute;
@@ -58,7 +58,7 @@ h1 {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
+/*riguarda i link del dropdown*/
 .dropdown-content a {
   float: none;
   color: black;
@@ -68,11 +68,11 @@ h1 {
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover { 
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content { /*Mostra il menù a tendina quando si passa il mouse sopra il pulsante del dropdown.*/
   display: block;
 }
 footer {
