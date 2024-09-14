@@ -1,84 +1,109 @@
-td, tr {
+body{
+font-family: Arial, Helvetica, sans-serif;     }
+/* Stili per la tabella */
+td, th {
   border-style: solid;
   border: 2px solid black;
   border-color: blue;
-  padding: 20px;
+  padding: 10px; /* Ridotto il padding per una visualizzazione più pulita */
 }
+
 th {
-  border: 5px solid black;
-  padding: 30px;
+  border-width: 3px; /* Ridotto lo spessore del bordo */
   background-color: #3e8e41;
 }
+
 h1 {
   color: red;
   text-align: center;
 }
+
 .image {
   text-align: center;
 }
+
+/* Stili per la navbar e il dropdown */
 .navbar {
-  overflow: hidden;/*nasconde qualsiasi contenuto al di fuori della barra di navigazione*/
-  background-color: #333;/*mette lo sfondo sulla barra di navigazione*/
+  overflow: hidden;
+  background-color: #333;
 }
 
-.navbar a {
+.navbar a, .dropdown .dropbtn {
   float: left;
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;/*padding interno ai liml*/
-  text-decoration: none;/*rimuove la sottolieatura ai link*/
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.dropdown { /*sarebbero i selettori applicati al menù a tendina*/
+.dropdown {
   float: left;
   overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none; /*rimuove il contorno del pulsante*/
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;/*eredita lo stile del pulsante del dropdown*/
+  background-color: inherit;
   font-family: inherit;
-  margin: 0;
+  border: none;
+  outline: none;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn { /*Cambia il colore di sfondo a rosso quando si passa il mouse sopra un link della navbar o il pulsante del dropdown.*/
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
-/*riguarda il menu del dropdown*/
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-/*riguarda i link del dropdown*/
+
 .dropdown-content a {
-  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
 }
 
-.dropdown-content a:hover { 
+.dropdown-content a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content { /*Mostra il menù a tendina quando si passa il mouse sopra il pulsante del dropdown.*/
+.dropdown:hover .dropdown-content {
   display: block;
 }
+
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  background-color: #f1f1f1;
+}
+
+nav {
+  float: right;
+  width: 30%;
+  background: #ccc;
+  padding: 40px;
+}
+
+nav p {
+  margin: 0; /* Rimosso padding per evitare spazi extra */
+}
+
 footer {
-  text-align: center;
-  margin-top: 20px;
+  margin-top:300px;
+  background-color: #777;
   padding: 10px;
-  background-color: #333;
+  text-align: center;
   color: white;
+  clear: both; /* Assicura che il footer non si sovrapponga agli altri elementi */
+}
+.styleElenco{
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
 }
