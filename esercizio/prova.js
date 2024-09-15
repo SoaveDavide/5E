@@ -45,3 +45,30 @@ btn.addEventListener("click",function(){
     newWindow.document.body.appendChild(script2);
 });
 document.querySelector("p").textContent = localStorage.getItem("username") + "---" +localStorage.getItem("password");
+
+const btnDrop = document.querySelector(".dropbtn");
+btnDrop.addEventListener("click", function(){
+
+    //selezioni il contenitore del drop-down
+    var dropdownContent = document.querySelector(".dropdown-content");
+
+    //creazione dei link
+    var insegnanti = document.createElement('a');
+    var studenti = document.createElement('a');
+    var classi = document.createElement('a');
+
+    //link a cui puntano
+    insegnanti.href = '#insegnati';
+    insegnanti.textContent = 'Insegnanti';
+
+    studenti.href = '#studenti';
+    studenti.textContent = 'studenti';
+    
+    classi.href = '#classi';
+    classi.textContent = 'Classi';
+    
+    //aggiungo i link al dropdown
+    dropdownContent.appendChild(insegnanti);
+    dropdownContent.appendChild(studenti);
+    dropdownContent.appendChild(classi);
+});
