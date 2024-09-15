@@ -1,4 +1,4 @@
-const btn = document.body.querySelector(".login");
+const btn = document.body.querySelector(".Blogin");
 btn.addEventListener("click",function(){
     const widht = screen.width /4; //25%
     const heihgt = screen.height/2; //50%
