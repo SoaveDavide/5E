@@ -1,5 +1,8 @@
-body{
-font-family: Arial, Helvetica, sans-serif;     }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 /* Stili per la tabella */
 td, th {
   border-style: solid;
@@ -21,7 +24,7 @@ h1 {
 .image {
   text-align: center;
 }
-button{
+.login{
   float: right;
   font-size: 16px;
   color: black;
@@ -29,6 +32,7 @@ button{
   padding: 14px 16px;
   text-decoration: none;
 }
+
 /* Stili per la navbar e il dropdown */
 .navbar {
   overflow: hidden;
@@ -114,3 +118,21 @@ footer {
   color: green;
   font-family: Arial, Helvetica, sans-serif;
 }
+  /* Style the form */
+  .container {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the input fields */
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
