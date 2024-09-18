@@ -10,6 +10,24 @@ td, th {
   border-color: blue;
   padding: 10px; /* Ridotto il padding per una visualizzazione più pulita */
 }
+.buttonDrp {
+  color: #fff;
+  background-color: #4CAF50; /* Colore di sfondo */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  width: 100%; /* Assicura che i bottoni occupino tutta la larghezza */
+  text-align: left; /* Allinea il testo a sinistra */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.buttonDrp:hover {
+  background-color: #45a049; /* Colore di sfondo quando si passa il mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge ombra al passaggio del mouse */
+  cursor: pointer;
+}
 
 th {
   border-width: 3px; /* Ridotto lo spessore del bordo */

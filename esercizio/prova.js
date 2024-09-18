@@ -53,20 +53,31 @@ btnDrop.addEventListener("click", function(){
     var dropdownContent = document.querySelector(".dropdown-content");
 
     //creazione dei link
-    var insegnanti = document.createElement('a');
-    var studenti = document.createElement('a');
-    var classi = document.createElement('a');
+    var insegnanti = document.createElement('button');
+    var studenti = document.createElement('button');
+    var classi = document.createElement('button');
 
     //link a cui puntano
-    insegnanti.href = '#insegnati';
     insegnanti.textContent = 'Insegnanti';
-
-    studenti.href = '#studenti';
-    studenti.textContent = 'studenti';
-    
-    classi.href = '#classi';
+    studenti.textContent = 'Studenti';
     classi.textContent = 'Classi';
-    
+
+    //aggiungo lo stile ai bottoni
+    insegnanti.classList.add('buttonDrp');
+    studenti.classList.add('buttonDrp');
+    classi.classList.add('buttonDrp');
+
+    //collegamento bottoni con i link
+    insegnanti.addEventListener("click",function(){
+        window.location.href = "#Insegnanti";
+    });
+    studenti.addEventListener("click", function(){
+        window.location.href = "#Studenti";
+    });
+    classi.addEventListener("click", function(){
+        window.location.href = "#Classi";
+    });
+
     //aggiungo i link al dropdown
     dropdownContent.appendChild(insegnanti);
     dropdownContent.appendChild(studenti);
