@@ -45,7 +45,7 @@ btn.addEventListener("click",function(){
     newWindow.document.body.appendChild(script2);
 });
 document.querySelector("p").textContent = localStorage.getItem("username") + "---" +localStorage.getItem("password");
-
+//dropdown con js
 const btnDrop = document.querySelector(".dropbtn");
 btnDrop.addEventListener("click", function(){
 
