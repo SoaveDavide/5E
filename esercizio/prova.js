@@ -51,7 +51,7 @@ btn.addEventListener("click", function() {
 
     form.appendChild(userName);
     form.appendChild(password);
-    form.appendChild(newWindow.document.createElement("br"));
+    form.appendChild(newWindow.document.createElement("br"));//aggiunge un break
     form.appendChild(submit);
 
     let script2 = newWindow.document.createElement("script");

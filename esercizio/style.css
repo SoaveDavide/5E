@@ -3,12 +3,13 @@ body {
   margin: 0;
   padding: 0;
 }
-.buttonDrp {
+.buttonDrp /*stile dei bottoni del dropdown*/
+{
   color: #fff;
   background-color: #4CAF50; /* Colore di sfondo */
   padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  text-decoration: none;/*rimuove la decorazione dal testo*/
+  display: block;/*In layout si estende automaticamente per l'intera larghezza del contenitore */
   border: none;
   width: 100%; /* Assicura che i bottoni occupino tutta la larghezza */
   text-align: left; /* Allinea il testo a sinistra */
@@ -19,15 +20,20 @@ body {
 .buttonDrp:hover {
   background-color: #45a049; /* Colore di sfondo quando si passa il mouse */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge ombra al passaggio del mouse */
-  cursor: pointer;
+  cursor: pointer;/*Vi è il puntatore del mouse*/
+}
+
+th, td {
+  border: 2px solid blue;
+  padding: 5px;
+  text-align: center;
 }
 
 th {
   border-width: 3px; /* Ridotto lo spessore del bordo */
   background-color: #3e8e41;
-  padding: auto;
+  padding: auto;/*Aggiunge padding automaticamente*/
 }
-
 h1 {
   color: red;
   text-align: center;
@@ -46,7 +52,7 @@ h1 {
 
 /* Stili per la navbar e il dropdown */
 .navbar {
-  overflow: hidden;
+  overflow: hidden;/*Se supera le dimensioni del contenitore verrà nascosto*/
   background-color: #333;
 }
 
@@ -82,20 +88,6 @@ h1 {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -110,18 +102,6 @@ table {
   border-collapse: collapse;
   table-layout: fixed; /* Mantiene le colonne di dimensioni fisse */
 }
-
-th, td {
-  border: 2px solid blue;
-  padding: 5px;
-  text-align: center;
-}
-
-th {
-  background-color: green;
-  color: black;
-}
-
 article {
   float: left;
   padding: 20px;
@@ -152,7 +132,7 @@ footer {
   color: green;
   font-family: Arial, Helvetica, sans-serif;
 }
-  /* Style the form */
+  /* Stile del form */
   .container {
     max-width: 300px;
     margin: 40px auto;
