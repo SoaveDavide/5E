@@ -3,13 +3,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Stili per la tabella */
-td, th {
-  border-style: solid;
-  border: 2px solid black;
-  border-color: blue;
-  padding: 10px; /* Ridotto il padding per una visualizzazione più pulita */
-}
 .buttonDrp {
   color: #fff;
   background-color: #4CAF50; /* Colore di sfondo */
@@ -112,9 +105,27 @@ h1 {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-table {
-  margin:auto;
+.right
+{
+
 }
+table {
+  width: 100%; /* Riempie tutta l'area disponibile */
+  border-collapse: collapse;
+  table-layout: fixed; /* Mantiene le colonne di dimensioni fisse */
+}
+
+th, td {
+  border: 2px solid blue;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: green;
+  color: black;
+}
+
 article {
   float: left;
   padding: 20px;
