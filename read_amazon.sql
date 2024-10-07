@@ -25,16 +25,19 @@ from db_amazon.prodotti p
 where p.marca like 'V%' or p.marca like 'T_C%'; -- iniziano per T, carattere sconosciuto in mezzo, terza C e il resto con la percentuale
 -- where p.marca lile '%B' finiscono con B
 
--- aggiornare campo descrizione cancellando tutti gli spazi da descrizione
-update db_amazon.prodotti p
-set p.descrizione = trim(p.descrizione); -- rimozione carattere a sinistra (tutti gli spazi prima e dopo)
-
-select p.descrizione , p.marca 
+/*marche che iniziano con la lettera t*/
+select p.descrizione, p.marca
 from db_amazon.prodotti p 
-where p.descrizione like "q%" and p.marca like "T%";
+-- where p.descrizione like "q%";
+-- where p.marca like "T%";
+where p.descrizione like "q%" and p.marca  like "T%";
+-- aggiornare il campo descrizione eliminando tutti gli spazi
+update db_amazon.prodotti p
+set p.descrizione = trim(p.descrizione); -- toglie gli spazi 
 
+-- importazione altra tabella 
+update db_amazon.prodotti 
+set descrizione = trim(descrizione); -- funziona!
 
-
-
-
-
+select distinct descrizione -- ti dà tutte le marche/descrizione nella tabella (no duplicati)
+from db_amazon.prodotti p;
